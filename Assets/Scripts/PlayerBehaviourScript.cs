@@ -16,9 +16,4 @@ public class PlayerBehaviourScript : MonoBehaviour {
         transform.position = new Vector2(transform.position.x, Camera.main.ScreenToWorldPoint(mouse).y);
 	}
 
-    void OnTriggerEnter(Collider other)
-    {
-        Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(-rb.velocity.x, rb.velocity.y);
-    }
 }
