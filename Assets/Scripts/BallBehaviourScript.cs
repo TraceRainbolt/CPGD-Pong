@@ -24,7 +24,6 @@ public class BallBehaviourScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        print("hello");
         rb.velocity = new Vector2(-rb.velocity.x, rb.velocity.y);
     }
 }
