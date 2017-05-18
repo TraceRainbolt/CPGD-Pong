@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ComputerBehaviourScript : MonoBehaviour {
-    public GameObject ball;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
+    public GameObject ball;
+		
 	void Update () {
-        transform.position = new Vector2(transform.position.x, ball.transform.position.y);
+		
+		// Follow the ball's y position
+        transform.position = new Vector2(transform.position.x, ball.transform.position.y); 
 	}
 }
